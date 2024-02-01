@@ -24,7 +24,7 @@ const getIsDeepEqual = function (object1, object2) {
     return true;
 }
 console.log(getIsDeepEqual({ a: 1, b: 2 }, { a: 1, b: 2 }));                                                                                                                                                                                    // true
-console.log(getIsDeepEqual({ a: 1, b: 2 }, { a: 1, b: 5 }));                                                                                                                                                                                    // false
+console.log(getIsDeepEqual({ a: 1, b: 2 }, { a: 1, b: 6 }));                                                                                                                                                                                    // false
 console.log(getIsDeepEqual({ a: 1, b: 2, obj: { test: "12" } }, { a: 1, b: 2, obj: { test: "12" } }));                                                                                                                                          // true
 console.log(getIsDeepEqual({ at: 1, bt: 2, test: [1, 2, 3], obj: { test: "12" } }, { at: 1, bt: 2, test: [1, 2, 3], obj: { test: "12" } }));                                                                                                    // true
 console.log(getIsDeepEqual({ at: 1, bt: 2, test: [1, 2, 3, { hi: "hi" }], obj: { test: "12" } }, { at: 1, bt: 2, test: [1, 2, 3, { hi: "hello" }], obj: { test: "12" } }));                                                                     // false
